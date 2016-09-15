@@ -13,6 +13,11 @@
 		A48A67F81D8B00E200763FCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48A67F71D8B00E200763FCC /* Assets.xcassets */; };
 		A48A67FB1D8B00E200763FCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48A67F91D8B00E200763FCC /* LaunchScreen.storyboard */; };
 		A48A68041D8B010100763FCC /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48A68031D8B010100763FCC /* SpriteKit.framework */; };
+		A48A68061D8B077100763FCC /* TitleScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A48A68051D8B077100763FCC /* TitleScene.sks */; };
+		A48A68081D8B0A9800763FCC /* TitleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48A68071D8B0A9800763FCC /* TitleScene.swift */; };
+		A48A680C1D8B162300763FCC /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = A48A680B1D8B162300763FCC /* config.plist */; };
+		A48A68101D8B173C00763FCC /* PlayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A48A680F1D8B173C00763FCC /* PlayScene.sks */; };
+		A48A68121D8B176900763FCC /* PlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48A68111D8B176900763FCC /* PlayScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		A48A67FA1D8B00E200763FCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A48A67FC1D8B00E200763FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A48A68031D8B010100763FCC /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		A48A68051D8B077100763FCC /* TitleScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TitleScene.sks; sourceTree = "<group>"; };
+		A48A68071D8B0A9800763FCC /* TitleScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleScene.swift; sourceTree = "<group>"; };
+		A48A680B1D8B162300763FCC /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		A48A680F1D8B173C00763FCC /* PlayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = PlayScene.sks; path = ../PlayScene.sks; sourceTree = "<group>"; };
+		A48A68111D8B176900763FCC /* PlayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayScene.swift; path = ../PlayScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 			children = (
 				A48A67F01D8B00E200763FCC /* AppDelegate.swift */,
 				A48A67F21D8B00E200763FCC /* ViewController.swift */,
+				A48A68071D8B0A9800763FCC /* TitleScene.swift */,
+				A48A68111D8B176900763FCC /* PlayScene.swift */,
+				A48A68051D8B077100763FCC /* TitleScene.sks */,
+				A48A680F1D8B173C00763FCC /* PlayScene.sks */,
+				A48A680B1D8B162300763FCC /* config.plist */,
 				A48A67F41D8B00E200763FCC /* Main.storyboard */,
 				A48A67F71D8B00E200763FCC /* Assets.xcassets */,
 				A48A67F91D8B00E200763FCC /* LaunchScreen.storyboard */,
@@ -136,7 +151,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48A68101D8B173C00763FCC /* PlayScene.sks in Resources */,
+				A48A680C1D8B162300763FCC /* config.plist in Resources */,
 				A48A67FB1D8B00E200763FCC /* LaunchScreen.storyboard in Resources */,
+				A48A68061D8B077100763FCC /* TitleScene.sks in Resources */,
 				A48A67F81D8B00E200763FCC /* Assets.xcassets in Resources */,
 				A48A67F61D8B00E200763FCC /* Main.storyboard in Resources */,
 			);
@@ -151,6 +169,8 @@
 			files = (
 				A48A67F31D8B00E200763FCC /* ViewController.swift in Sources */,
 				A48A67F11D8B00E200763FCC /* AppDelegate.swift in Sources */,
+				A48A68121D8B176900763FCC /* PlayScene.swift in Sources */,
+				A48A68081D8B0A9800763FCC /* TitleScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +334,7 @@
 				A48A68011D8B00E200763FCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
