@@ -16,12 +16,12 @@ class PlayScene: SKScene {
     }
 
     override func didMove(to view: SKView) {
+        print("diMove: 表示完了？")
         let path = Bundle.main.path(forResource: "config", ofType: "geojson")!
         let url  = URL(fileURLWithPath: path)
         let data = try? Data(contentsOf: url)
-        let json = try? JSONSerialization.jsonObject(with: data!, options: [])
-        print("diMove: 表示完了？")
-        
+        let json = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments)
+        print(json!)
     }
     
     
