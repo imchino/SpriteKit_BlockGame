@@ -21,5 +21,11 @@ class TitleScene: SKScene {
         }
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let playScene = PlayScene()
+        let transition = SKTransition()
+        self.view?.presentScene(playScene)
+        
+    }
 
 }
